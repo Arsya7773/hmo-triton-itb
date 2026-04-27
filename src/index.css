@@ -100,6 +100,20 @@
   box-shadow: 0 18px 40px rgba(34, 211, 238, 0.18);
 }
 
+/* Sailing Ship Animation */
+@keyframes sailShip {
+  0% { transform: translateX(120vw); }
+  100% { transform: translateX(-50vw); }
+}
+
+.animate-sail {
+  animation: sailShip 20s linear infinite;
+}
+
+.blend-exclusion {
+  mix-blend-mode: exclusion;
+}
+
 @keyframes liquidWave {
   0% { transform: translate(-50%, -75%) rotate(0deg); }
   100% { transform: translate(-50%, -75%) rotate(360deg); }

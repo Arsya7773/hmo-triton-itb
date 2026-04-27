@@ -1,32 +1,41 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { VisionMission } from './components/VisionMission';
-import { Organogram } from './components/Organogram';
+import { OrganogramLanding } from './components/OrganogramLanding';
 import { Programs } from './components/Programs';
 import { NewsGrid } from './components/NewsGrid';
 import { Footer } from './components/Footer';
+import { Sejarah } from './components/Sejarah';
+import { Organogram } from './components/Organogram';
 
-function MainContent() {
+function LandingPage() {
   return (
-    <div className="flex flex-col min-h-screen w-full overflow-x-hidden">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <VisionMission />
-        <Organogram />
-        <Programs />
-        <NewsGrid />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <Hero />
+      <About />
+      <VisionMission />
+      <OrganogramLanding />
+      <Programs />
+      <NewsGrid />
+    </main>
   );
 }
 
 export default function App() {
   return (
-    <MainContent />
+    <Router>
+      <div className="flex flex-col min-h-screen w-full overflow-x-hidden">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/sejarah" element={<Sejarah />} />
+          <Route path="/organogram" element={<Organogram />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
