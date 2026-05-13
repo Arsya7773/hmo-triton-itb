@@ -42,8 +42,8 @@ export const Sejarah = () => {
       <section className="w-full bg-white py-24 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-2 font-serif flex items-center gap-3">
-            <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
-            Latar Belakang & Definisi
+            <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
+            <span className="text-yellow-600">Latar Belakang & Definisi</span>
           </h2>
           <p className="text-gray-500 mb-16">Fondasi dan struktur organisasi himpunan</p>
 
@@ -55,13 +55,13 @@ export const Sejarah = () => {
             <div className="space-y-12">
               {/* Item 1: Latar Belakang */}
               <div className="relative pl-24">
-                <div className="absolute left-0 top-2 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg shadow-yellow-400/50 animate-pulse z-10">
+                <div className="absolute left-0 top-2 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg shadow-yellow-400/50 animate-pulse z-10 border-4 border-yellow-500">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
-                <div className="bg-gradient-to-br from-yellow-50 to-cyan-50 rounded-2xl p-8 border-2 border-yellow-400 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="bg-gradient-to-br from-yellow-50 to-cyan-50 rounded-2xl p-8 border-2 border-yellow-400 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-yellow-500">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
                     <Zap className="w-6 h-6 text-yellow-500" />
-                    Latar Belakang
+                    <span className="text-yellow-600">Latar Belakang</span>
                   </h3>
                   <p className="text-gray-700 leading-relaxed text-lg">
                     Himpunan Mahasiswa Oseanografi "TRITON" ITB merupakan wadah bagi mahasiswa untuk mengembangkan potensi diri di bidang keilmuan dan mempererat hubungan antar massa. Keberadaan Komisariat berkontribusi dalam pembentukan karakter dan penguatan struktur internal. Diperlukan perencanaan yang jelas dan terarah agar setiap kegiatan mampu menjawab tantangan dan kebutuhan massa secara optimal.
@@ -71,13 +71,13 @@ export const Sejarah = () => {
 
               {/* Item 2: Definisi BPAK */}
               <div className="relative pl-24">
-                <div className="absolute left-0 top-2 w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center shadow-lg shadow-cyan-500/50 animate-pulse z-10">
+                <div className="absolute left-0 top-2 w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center shadow-lg shadow-cyan-500/50 animate-pulse z-10 border-4 border-cyan-600">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
-                <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 border-2 border-cyan-500 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 border-2 border-cyan-500 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-yellow-400">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
                     <Zap className="w-6 h-6 text-cyan-500" />
-                    Definisi BPAK
+                    <span className="text-cyan-600">Definisi BPAK</span>
                   </h3>
                   <p className="text-gray-700 leading-relaxed text-lg">
                     Badan Perwakilan Anggota Komisariat (BPAK) HMO 'TRITON' ITB dipimpin oleh Ketua BPA yang bertanggung jawab agar badan ini berjalan sesuai fungsinya sebagai lembaga perwakilan yang berkedudukan tinggi.
@@ -93,8 +93,8 @@ export const Sejarah = () => {
       <section className="w-full bg-gradient-to-b from-gray-50 to-white py-24 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-2 font-serif flex items-center gap-3">
-            <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
-            Tinjauan Ideal (Kabinet Daya Biru)
+            <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
+            <span className="text-yellow-600">Tinjauan Ideal (Kabinet Daya Biru)</span>
           </h2>
           <p className="text-gray-500 mb-16">Visi dan misi berdasarkan peraturan dan ketentuan</p>
 

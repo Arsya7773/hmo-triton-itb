@@ -9,7 +9,7 @@ import { Programs } from './components/Programs';
 import { NewsGrid } from './components/NewsGrid';
 import { Footer } from './components/Footer';
 import { Sejarah } from './components/Sejarah';
-import { Organogram } from './components/Organogram';
+import { Organogram } from './components/sections/Organogram/Organogram';
 
 function LandingPage() {
   return (

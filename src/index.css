@@ -94,13 +94,7 @@
   background-position: 0% 50%;
 }
 
-.liquid-button:hover {
-  transform: scale(1.05);
-  background-position: 100% 50%;
-  box-shadow: 0 18px 40px rgba(34, 211, 238, 0.18);
-}
-
-/* Sailing Ship Animation */
+/* ========== SHIP ANIMATION ========== */
 @keyframes sailShip {
   0% { transform: translateX(120vw); }
   100% { transform: translateX(-50vw); }
@@ -112,6 +106,12 @@
 
 .blend-exclusion {
   mix-blend-mode: exclusion;
+}
+
+.liquid-button:hover {
+  transform: scale(1.05);
+  background-position: 100% 50%;
+  box-shadow: 0 18px 40px rgba(34, 211, 238, 0.18);
 }
 
 @keyframes liquidWave {

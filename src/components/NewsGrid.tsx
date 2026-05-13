@@ -4,12 +4,11 @@ import { Heart, Calendar, ArrowRight } from 'lucide-react';
 
 export const NewsGrid = () => {
   const news = [
-    { title: 'Apresiasi Lomba: Juara 1 Ocean Project 2024', date: 'SEP 20 2024', tag: 'Apresiasi', img: '/assets/news/news-1.jpg' },
+    { Ktitle: 'Apresiasi Lomba: Juara 1 Ocean Project 2024', date: 'SEP 20 2024', tag: 'Apresiasi', img: '/assets/news/news-1.jpg' },
     { title: 'Oceanography Student Summit: Global Perspectives', date: 'AUG 12 2024', tag: 'Kegiatan', img: '/assets/news/news-2.jpg' },
     { title: 'Coastal Care: Rehabilitasi Mangrove Pangandaran', date: 'JUL 05 2024', tag: 'Pengabdian', img: '/assets/news/news-3.jpg' },
     { title: 'Kunjungan Industri: BMKG & Dishidros TNI AL', date: 'JUN 22 2024', tag: 'Akademik', img: '/assets/news/news-4.jpg' },
   ];
-
   return (
     <section id="kabar" className="py-24 px-8 md:px-20 bg-white relative overflow-hidden">
       <div className="absolute inset-0 dots-pattern opacity-5 pointer-events-none" />
