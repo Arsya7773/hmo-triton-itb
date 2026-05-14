@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Phone, Instagram, Twitter, Mail } from 'lucide-react';
+import { ASSET_PATHS } from '@/lib/assets';
 
 export const Footer = () => {
   return (
@@ -9,7 +10,7 @@ export const Footer = () => {
         {/* Brand & Address */}
         <div className="space-y-8">
           <div className="flex items-center gap-4">
-            <img src="/assets/logos/logo-hmo.jpg" alt="HMO Logo" className="h-12 w-auto object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+            <img src={ASSET_PATHS.logos.hmo} alt="HMO Logo" className="h-12 w-auto object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
             <div>
               <span className="block text-xl font-bold text-white font-serif uppercase leading-none">HMO TRITON</span>
               <span className="block text-[10px] font-medium text-white/50 uppercase tracking-widest mt-1">Oceanography ITB</span>

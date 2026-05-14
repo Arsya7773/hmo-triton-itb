@@ -4,6 +4,7 @@
  */
 
 import { OrgChart, OrgNode, OrgConnection } from '@/types/organogram';
+import { ASSET_PATHS } from '@/lib/assets';
 
 /**
  * ORGANIZATIONAL NODES
@@ -16,7 +17,7 @@ const nodes: OrgNode[] = [
     name: 'Adrevi Chepa\nMuhammad',
     fullName: 'Adrevi Chepa Muhammad',
     title: 'Ketua Komisariat',
-    photo: '/assets/pengurus/adrevi-chepa.jpg',
+    photo: ASSET_PATHS.pengurus.adreviChepa,
     position: { x: 900, y: 80 },
     level: 0,
   },

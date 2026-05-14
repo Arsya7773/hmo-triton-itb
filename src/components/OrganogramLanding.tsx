@@ -1,14 +1,15 @@
 import React from 'react';
+import { ASSET_PATHS } from '@/lib/assets';
 
 export const OrganogramLanding = () => {
   const divisions = [
-    { title: 'KETUA KOMISARIAT', name: 'Adrevi Chepa Muhammad', img: '/assets/divisions/ketua-komisariat.png' },
-    { title: 'KESEKJENAN', name: 'Kesekretariatan', img: '/assets/divisions/kesekjenan.png' },
-    { title: 'INTERNAL', name: 'Divisi Internal', img: '/assets/divisions/internal.png' },
-    { title: 'EKSTERNAL', name: 'Divisi Eksternal', img: '/assets/divisions/eksternal.png' },
-    { title: 'AKILPROF', name: 'Akil & Profesi', img: '/assets/divisions/akilprof.png' },
-    { title: 'PMSDA', name: 'Pengabdian Masyarakat', img: '/assets/divisions/PMSDA.png' },
-    { title: 'MEDKOMINFO', name: 'Media & Komunikasi', img: '/assets/divisions/medkominfo.png' },
+    { title: 'KETUA KOMISARIAT', name: 'Adrevi Chepa Muhammad', img: ASSET_PATHS.divisions.ketuaKomisariat },
+    { title: 'KESEKJENAN', name: 'Kesekretariatan', img: ASSET_PATHS.divisions.kesekjenan },
+    { title: 'INTERNAL', name: 'Divisi Internal', img: ASSET_PATHS.divisions.internal },
+    { title: 'EKSTERNAL', name: 'Divisi Eksternal', img: ASSET_PATHS.divisions.eksternal },
+    { title: 'AKILPROF', name: 'Akil & Profesi', img: ASSET_PATHS.divisions.akilprof },
+    { title: 'PMSDA', name: 'Pengabdian Masyarakat', img: ASSET_PATHS.divisions.PMSDA },
+    { title: 'MEDKOMINFO', name: 'Media & Komunikasi', img: ASSET_PATHS.divisions.medkominfo },
   ];
 
   return (

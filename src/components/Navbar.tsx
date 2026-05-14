@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { BookOpen, Network, Briefcase, Mail, Users, Award } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { ASSET_PATHS } from '@/lib/assets';
 
 export const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -170,7 +171,7 @@ export const Navbar = () => {
     <nav className="fixed top-0 w-full z-[99] bg-white/80 backdrop-blur-md border-b border-slate-200/20 px-8 py-4 flex items-center justify-between">
       <Link to="/" className="flex items-center gap-4">
         <img
-          src="/assets/logos/logo-hmo.jpg"
+          src={ASSET_PATHS.logos.hmo}
           className="h-10 w-auto object-contain"
           alt="HMO Logo"
           onError={(e) => {

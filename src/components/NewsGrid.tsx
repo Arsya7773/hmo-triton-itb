@@ -1,13 +1,14 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Heart, Calendar, ArrowRight } from 'lucide-react';
+import { ASSET_PATHS } from '@/lib/assets';
 
 export const NewsGrid = () => {
   const news = [
-    { Ktitle: 'Apresiasi Lomba: Juara 1 Ocean Project 2024', date: 'SEP 20 2024', tag: 'Apresiasi', img: '/assets/news/news-1.jpg' },
-    { title: 'Oceanography Student Summit: Global Perspectives', date: 'AUG 12 2024', tag: 'Kegiatan', img: '/assets/news/news-2.jpg' },
-    { title: 'Coastal Care: Rehabilitasi Mangrove Pangandaran', date: 'JUL 05 2024', tag: 'Pengabdian', img: '/assets/news/news-3.jpg' },
-    { title: 'Kunjungan Industri: BMKG & Dishidros TNI AL', date: 'JUN 22 2024', tag: 'Akademik', img: '/assets/news/news-4.jpg' },
+    { Ktitle: 'Apresiasi Lomba: Juara 1 Ocean Project 2024', date: 'SEP 20 2024', tag: 'Apresiasi', img: ASSET_PATHS.news.news1 },
+    { title: 'Oceanography Student Summit: Global Perspectives', date: 'AUG 12 2024', tag: 'Kegiatan', img: ASSET_PATHS.news.news2 },
+    { title: 'Coastal Care: Rehabilitasi Mangrove Pangandaran', date: 'JUL 05 2024', tag: 'Pengabdian', img: ASSET_PATHS.news.news3 },
+    { title: 'Kunjungan Industri: BMKG & Dishidros TNI AL', date: 'JUN 22 2024', tag: 'Akademik', img: ASSET_PATHS.news.news4 },
   ];
   return (
     <section id="kabar" className="py-24 px-8 md:px-20 bg-white relative overflow-hidden">
